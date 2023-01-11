@@ -1,10 +1,15 @@
-# WorkTasks
+# Work Tasks
+
+>>> Given task
+
+    >> tasked with creating an application that allows a user to manage tasks for
+    >> their employees and see an overview of everything; the employees are imported from a CSV import.
     
-    >> the list of employees and tasks is retrieved from a csv file
-    >> we can / edit / remove the tasks present in our csv file
-    >> we can search if a task exists in the system ( in work )
-    >> we can check if a task was assigned to an employee
-    >> we can change the status of a selected task
-    >> we can assign tasks to employees
-    >> we can delete completed / all tasks
-    >> the changes done in the form are saved in the csv file
+>>> Specs
+
+    >> add new tasks
+    >> search for tasks
+    >> remove tasks
+    >> modify tasks
+    >> assign employees to various tasks
+    >> save and load date from a .csv file

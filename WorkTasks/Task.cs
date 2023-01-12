@@ -42,5 +42,25 @@ namespace WorkTasks
 
             return task;
         }
+
+        public static Task FromCsvFilter(string csvLine, string key)
+        {
+            string[] values = csvLine.Split(',');
+            Task task = new Task();
+
+            if (csvLine.Contains(key))
+            {
+                task.taskHeader = values[0];
+                task.departaments = values[1];
+                task.status = values[2];
+                task.deadline = values[3];
+                task.by = values[4];
+                task.description = values[5];
+                task.givenTo = values[6];
+            }
+            else task.taskHeader = "INVALID";
+
+            return task;
+        }
     }   
 }

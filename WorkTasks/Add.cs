@@ -42,7 +42,7 @@ namespace WorkTasks
 
                 taskHeader = textBox1.Text;
                 departaments = comboBox1.SelectedItem.ToString();
-                status = textBox3.Text;
+                status = comboBox2.SelectedItem.ToString();
                 deadline = textBox4.Text;
                 by = textBox5.Text;
                 description = textBox6.Text;
@@ -60,7 +60,6 @@ namespace WorkTasks
             MessageBox.Show("New task added!!");
 
             textBox1.Text = "";
-            textBox3.Text = "";
             textBox4.Text = "";
             textBox5.Text = "";
             textBox6.Text = "";

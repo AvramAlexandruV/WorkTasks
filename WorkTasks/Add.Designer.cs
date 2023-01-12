@@ -36,12 +36,12 @@ namespace WorkTasks
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -105,13 +105,6 @@ namespace WorkTasks
             this.textBox1.Size = new System.Drawing.Size(398, 23);
             this.textBox1.TabIndex = 6;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(191, 137);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(398, 23);
-            this.textBox3.TabIndex = 8;
-            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(191, 181);
@@ -156,17 +149,30 @@ namespace WorkTasks
             this.comboBox1.Size = new System.Drawing.Size(398, 23);
             this.comboBox1.TabIndex = 13;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.Items.AddRange(new object[] {
+            "Open",
+            "In Progress",
+            "Completed",
+            "Blocked",
+            "Cancelled"});
+            this.comboBox2.Location = new System.Drawing.Point(191, 137);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(398, 23);
+            this.comboBox2.TabIndex = 14;
+            // 
             // Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -190,11 +196,11 @@ namespace WorkTasks
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
